@@ -18,6 +18,7 @@ defmodule HelloWeb.Router do
 
     get "/", PageController, :index
     get "/swag", SwagController, :index
+    get "/swag/:messenger", SwagController, :show
   end
 
   # Other scopes may use custom stacks.
