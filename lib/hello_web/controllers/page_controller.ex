@@ -4,6 +4,6 @@ defmodule HelloWeb.PageController do
   def index(conn, _params) do
     conn
     |> put_layout("admin.html")
-    |> render("index.html")
+    |> render(:index)
   end
 end
