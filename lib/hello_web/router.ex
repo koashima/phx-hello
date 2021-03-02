@@ -18,8 +18,10 @@ defmodule HelloWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    resources "/users", UserController
     get "/swag", SwagController, :index
     get "/swag/:messenger", SwagController, :show
+
   end
 
   # Other scopes may use custom stacks.
